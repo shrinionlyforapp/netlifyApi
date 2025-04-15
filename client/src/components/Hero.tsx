@@ -56,7 +56,6 @@ const Hero: React.FC = () => {
           </div>
           <div className="hidden md:block">
             <div className="relative">
-              <div className="absolute -left-4 -top-4 w-full h-full border-2 border-[#D97706] rounded-lg"></div>
               <img 
                 src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80" 
                 alt="Luxury home in Toronto" 
