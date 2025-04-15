@@ -73,17 +73,17 @@ const AboutPage: React.FC = () => {
           <div className="mt-16 bg-gray-50 p-8 rounded-lg">
             <h3 className="font-heading text-2xl font-semibold mb-4">Professional Approach</h3>
             <p className="text-[#374151] mb-4">
-              Prakash approaches each appraisal assignment with a commitment to thorough research, detailed analysis, and clear communication. 
-              He believes in providing not just a number, but a comprehensive understanding of the factors that influence property value.
+              Prakash is a self-motivated professional who balances industry expertise, communication skills, and analytical 
+              abilities to deliver productive, reliable, and profitable results for all clients.
             </p>
             <p className="text-[#374151] mb-4">
-              With a focus on accuracy and timeliness, Prakash has built a reputation for delivering reliable appraisals that stand up to scrutiny
-              from lenders, courts, and other stakeholders. His dedication to professional ethics and continuous learning ensures that clients
-              receive the highest quality service for their appraisal needs.
+              With extensive experience in both urban and rural property appraisals and proficiency in MS Office (Excel, Word, PowerPoint, 
+              and Outlook), Prakash ensures comprehensive reports and presentations that meet the highest professional standards.
             </p>
             <p className="text-[#374151]">
-              Whether you're a homeowner, real estate professional, lender, or attorney, you can count on Prakash to provide objective,
-              well-supported valuations that help you make informed decisions about your property.
+              Whether you're a major bank, private lender, mortgage broker, buyer, seller, or lawyer, you can count on 
+              PNP Appraisal Inc. to provide objective, well-supported valuations that help you make informed decisions 
+              about residential properties throughout the GTA and surrounding regions.
             </p>
           </div>
         </Container>
