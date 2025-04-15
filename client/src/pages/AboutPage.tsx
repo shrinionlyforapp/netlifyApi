@@ -51,7 +51,7 @@ const AboutPage: React.FC = () => {
 
       <section className="py-16 bg-white">
         <Container>
-          <div id="qualifications" className="text-center mb-16 scroll-mt-48 pt-8">
+          <div id="qualifications" className="text-center mb-16 scroll-mt-64 pt-16">
             <span className="text-[#D97706] font-medium">Expertise & Credentials</span>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#1F2937] mt-2 mb-4">Professional Qualifications</h2>
             <p className="max-w-3xl mx-auto text-lg text-[#374151]">
