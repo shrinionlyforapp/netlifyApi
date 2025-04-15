@@ -25,6 +25,11 @@ const AboutPage: React.FC = () => {
       icon: <CheckCircle className="h-8 w-8" />,
       title: "RECO Registered Realtor",
       description: "Additional expertise as a registered realtor with the Real Estate Council of Ontario."
+    },
+    {
+      icon: <Linkedin className="h-8 w-8" />,
+      title: "LinkedIn Profile",
+      description: <a href="https://ca.linkedin.com/in/prakash-panchal-53111846" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">View Professional Profile on LinkedIn</a>
     }
   ];
 
