@@ -2,11 +2,37 @@ import React from 'react';
 import { Link } from 'wouter';
 import Container from './Container';
 
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+
 const Hero: React.FC = () => {
+  const images = [
+    "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80",
+    "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80",
+    "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80",
+  ];
+
   return (
-    <section className="relative bg-gradient-to-r from-primary to-[#1e3a8a] text-white">
+    <section className="relative text-white">
+      <div className="absolute inset-0">
+        <Carousel className="w-full h-full" opts={{ loop: true, dragFree: true }} autoplay>
+          <CarouselContent>
+            {images.map((image, index) => (
+              <CarouselItem key={index} className="w-full h-full">
+                <div className="relative w-full h-[600px]">
+                  <img 
+                    src={image} 
+                    alt={`Luxury home ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-[#1e3a8a]/80"></div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      </div>
       <div className="absolute inset-0 bg-black opacity-30"></div>
-      <Container className="py-20 md:py-32 relative z-10">
+      <Container className="min-h-[600px] flex items-center relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6 leading-tight">Professional Real Estate Appraisals in Greater Toronto Area</h1>
