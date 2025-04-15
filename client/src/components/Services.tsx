@@ -51,7 +51,7 @@ const Services: React.FC = () => {
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#1F2937] mt-2 mb-4">Comprehensive Appraisal Services</h2>
           <p className="max-w-3xl mx-auto text-lg text-[#374151]">Trusted residential property valuations for all your real estate needs</p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
@@ -70,6 +70,16 @@ const Services: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-8">
+          <a
+            href="https://www.aicanada.ca/appraisers/909412/?pager=1&cn-reloaded=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-primary hover:text-primary/80"
+          >
+            View AIC Credentials <ArrowRight className="w-4 h-4 ml-2" />
+          </a>
         </div>
       </Container>
     </section>
