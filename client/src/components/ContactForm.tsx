@@ -269,7 +269,7 @@ const ContactForm: React.FC = () => {
                   </div>
                   <div className="ml-3">
                     <h4 className="text-lg font-medium text-[#1F2937]">Email</h4>
-                    <p className="text-[#374151]">info@pnpappraisal.com</p>
+                    <p className="text-[#374151]">prakashpanchal@pnpappisers.com</p>
                   </div>
                 </div>
                 
