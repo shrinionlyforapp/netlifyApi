@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
                 </span>
               </Link>
             </div>
-            
+
             {/* Desktop menu */}
             <div className="hidden md:flex items-center space-x-8">
               {navLinks.map((link, index) => (
@@ -58,8 +58,14 @@ const Navbar: React.FC = () => {
               >
                 Contact Us
               </Link>
+              <Link 
+                href="/request-quote" 
+                className="ml-4 px-4 py-2 bg-white text-primary hover:bg-gray-100 rounded-md font-medium text-sm transition duration-150 ease-in-out"
+              >
+                Request Quote
+              </Link>
             </div>
-            
+
             {/* Mobile menu button */}
             <div className="md:hidden flex items-center">
               <button 
@@ -75,7 +81,7 @@ const Navbar: React.FC = () => {
             </div>
           </div>
         </nav>
-        
+
         {/* Mobile menu */}
         <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg rounded-b-lg">
@@ -95,6 +101,13 @@ const Navbar: React.FC = () => {
               onClick={closeMenu}
             >
               Contact Us
+            </Link>
+            <Link 
+              href="/request-quote" 
+              className="block px-3 py-2 rounded-md text-base font-medium bg-white text-primary hover:bg-gray-100"
+              onClick={closeMenu}
+            >
+              Request Quote
             </Link>
           </div>
         </div>

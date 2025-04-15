@@ -12,7 +12,10 @@ const Hero: React.FC = () => {
             <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6 leading-tight">Professional Real Estate Appraisals in Greater Toronto Area</h1>
             <p className="text-xl mb-8 text-gray-100">Certified residential appraisers providing accurate property valuations for mortgages, private sales, legal matters, and more.</p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/services" className="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-md font-semibold transition duration-150 ease-in-out">
+              <Link href="/contact" className="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-md font-semibold transition duration-150 ease-in-out">
+                Request Quote
+              </Link>
+              <Link href="/services" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary px-6 py-3 rounded-md font-semibold transition duration-150 ease-in-out ml-4">
                 Our Services
               </Link>
               <Link href="/contact" className="bg-[#D97706] hover:bg-[#F59E0B] text-white px-6 py-3 rounded-md font-semibold transition duration-150 ease-in-out">
