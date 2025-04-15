@@ -51,7 +51,7 @@ const About: React.FC = () => {
                 Contact Us
               </Link>
               <Link 
-                href="/about" 
+                href="/about#qualifications" 
                 className="border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-md font-semibold transition duration-150 ease-in-out"
               >
                 View Credentials
