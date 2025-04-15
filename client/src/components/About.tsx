@@ -58,7 +58,7 @@ const About: React.FC = () => {
               <div className="absolute -right-4 -bottom-4 w-full h-full border-2 border-[#D97706] rounded-lg"></div>
               <img 
                 src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" 
-                alt="Prakash Panchal, Property Appraiser" 
+                alt="PNP Appraisal Inc., Professional Property Appraiser" 
                 className="rounded-lg shadow-xl w-full h-auto object-cover" 
                 style={{ maxHeight: '500px' }}
               />
