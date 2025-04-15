@@ -8,23 +8,23 @@ const AboutPage: React.FC = () => {
   const qualifications = [
     {
       icon: <Award className="h-8 w-8" />,
-      title: "Certified Professional Appraiser",
-      description: "Licensed by the Appraisal Institute of Canada with continuous professional development."
+      title: "P.App., CRA Designations",
+      description: "Professional Appraiser (P.App.) and Canadian Residential Appraiser (CRA) certified by the Appraisal Institute of Canada."
     },
     {
       icon: <Briefcase className="h-8 w-8" />,
-      title: "15+ Years Experience",
-      description: "Extensive experience in the Greater Toronto Area real estate market across all property types."
+      title: "8+ Years Experience",
+      description: "Extensive experience working with major AMCs including FNF, Brookfield (now RPS), and NAS."
     },
     {
       icon: <BookOpen className="h-8 w-8" />,
-      title: "Advanced Market Knowledge",
-      description: "Deep understanding of local market trends, building practices, and neighborhood characteristics."
+      title: "Bachelor of Science Degree",
+      description: "Strong educational background combined with specialized training in real estate appraisal."
     },
     {
       icon: <CheckCircle className="h-8 w-8" />,
-      title: "Commitment to Excellence",
-      description: "Dedicated to delivering thorough, accurate appraisals that exceed client expectations."
+      title: "RECO Registered Realtor",
+      description: "Additional expertise as a registered realtor with the Real Estate Council of Ontario."
     }
   ];
 

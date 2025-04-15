@@ -4,10 +4,10 @@ import Container from './Container';
 
 const About: React.FC = () => {
   const stats = [
-    { value: '15+', label: 'Years Experience' },
-    { value: '2,000+', label: 'Properties Appraised' },
+    { value: '8+', label: 'Years Experience' },
+    { value: '1,000+', label: 'Properties Appraised' },
     { value: '98%', label: 'Client Satisfaction' },
-    { value: '100+', label: 'Business Clients' }
+    { value: '50+', label: 'Business Clients' }
   ];
 
   return (
@@ -18,15 +18,19 @@ const About: React.FC = () => {
             <span className="text-[#D97706] font-medium">About Us</span>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#1F2937] mt-2 mb-6">About PNP Appraisal Inc.</h2>
             <p className="text-[#374151] mb-4">
-              With over 15 years of experience in property appraisal across the Greater Toronto Area, 
-              PNP Appraisal Inc. has built a reputation for delivering accurate, timely, and professional 
-              valuation services.
+              PNP Appraisal Inc. is led by Prakashkumar Panchal, P.App., CRA, a qualified Canadian Residential Appraiser 
+              with over 8 years of experience in property valuation throughout the Greater Toronto Area, Durham region, 
+              York region, Toronto, and Scarborough.
+            </p>
+            <p className="text-[#374151] mb-4">
+              As a certified appraiser with the Appraisal Institute of Canada, Prakash specializes in residential 
+              properties including single-family homes and multi-family properties up to 4 units (duplexes, triplexes, 
+              and fourplexes).
             </p>
             <p className="text-[#374151] mb-6">
-              As certified appraisers with extensive knowledge of Toronto's diverse real estate market, 
-              our team combines industry expertise with a commitment to personalized service. From residential 
-              homes to commercial properties, our comprehensive understanding of local market trends ensures 
-              reliable valuations that clients can trust.
+              With a client base that includes major banks, private lenders, mortgage brokers, buyers, sellers, and lawyers, 
+              Prakash brings his extensive experience, industry expertise, and analytical abilities to every appraisal project, 
+              delivering accurate and reliable valuations you can trust.
             </p>
             
             <div className="grid grid-cols-2 gap-4 mb-8">
@@ -57,8 +61,8 @@ const About: React.FC = () => {
             <div className="relative">
               <div className="absolute -right-4 -bottom-4 w-full h-full border-2 border-[#D97706] rounded-lg"></div>
               <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" 
-                alt="PNP Appraisal Inc., Professional Property Appraiser" 
+                src="/assets/prakash-profile.jpg" 
+                alt="Prakashkumar Panchal, P.App., CRA - Professional Property Appraiser" 
                 className="rounded-lg shadow-xl w-full h-auto object-cover" 
                 style={{ maxHeight: '500px' }}
               />
