@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '@/components/Container';
 import About from '@/components/About';
 import CTASection from '@/components/CTASection';
-import { Award, CheckCircle, Briefcase, BookOpen } from 'lucide-react';
+import { Award, CheckCircle, Briefcase, BookOpen, Linkedin } from 'lucide-react';
 
 const AboutPage: React.FC = () => {
   const qualifications = [
