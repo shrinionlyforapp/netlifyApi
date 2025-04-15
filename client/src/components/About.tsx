@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'wouter';
 import Container from './Container';
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 
 const About: React.FC = () => {
   const stats = [
@@ -59,13 +60,29 @@ const About: React.FC = () => {
           </div>
           <div className="order-1 md:order-2">
             <div className="relative">
-              <div className="absolute -right-4 -bottom-4 w-full h-full border-2 border-[#D97706] rounded-lg"></div>
-              <img 
-                src="/assets/prakash-profile.jpg" 
-                alt="Prakashkumar Panchal, P.App., CRA - Professional Property Appraiser" 
-                className="rounded-lg shadow-xl w-full h-auto object-cover" 
-                style={{ maxHeight: '500px' }}
-              />
+              <Carousel 
+                className="w-full" 
+                opts={{ 
+                  loop: true,
+                  dragFree: true,
+                  duration: 3000,
+                  delay: 5000
+                }}
+              >
+                <CarouselContent>
+                  <CarouselItem className="w-full">
+                    <div className="relative animate-fade-in">
+                      <div className="absolute -right-4 -bottom-4 w-full h-full border-2 border-[#D97706] rounded-lg"></div>
+                      <img 
+                        src="/assets/prakash-profile.jpg" 
+                        alt="Prakashkumar Panchal, P.App., CRA - Professional Property Appraiser" 
+                        className="rounded-lg shadow-xl w-full h-auto object-cover transition-transform duration-[3000ms] scale-105 hover:scale-100" 
+                        style={{ maxHeight: '500px' }}
+                      />
+                    </div>
+                  </CarouselItem>
+                </CarouselContent>
+              </Carousel>
             </div>
           </div>
         </div>
