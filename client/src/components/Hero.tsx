@@ -14,15 +14,23 @@ const Hero: React.FC = () => {
   return (
     <section className="relative text-white">
       <div className="absolute inset-0">
-        <Carousel className="w-full h-full" opts={{ loop: true, dragFree: true }} autoplay>
+        <Carousel 
+          className="w-full h-full" 
+          opts={{ 
+            loop: true,
+            dragFree: true,
+            duration: 3000,
+            delay: 5000
+          }} 
+        >
           <CarouselContent>
             {images.map((image, index) => (
               <CarouselItem key={index} className="w-full h-full">
-                <div className="relative w-full h-[600px]">
+                <div className="relative w-full h-[600px] animate-fade-in">
                   <img 
                     src={image} 
                     alt={`Luxury home ${index + 1}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-[3000ms] scale-105 hover:scale-100"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-[#1e3a8a]/80"></div>
                 </div>
