@@ -9,8 +9,8 @@ const Hero: React.FC = () => {
       <Container className="py-20 md:py-32 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6 leading-tight">Toronto's Premier Property Appraisal Services</h1>
-            <p className="text-xl mb-8 text-gray-100">Professional, accurate, and trusted property valuations by PNP Appraisal Inc., serving the Greater Toronto Area.</p>
+            <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6 leading-tight">Professional Real Estate Appraisals in Greater Toronto Area</h1>
+            <p className="text-xl mb-8 text-gray-100">Certified residential appraisers providing accurate property valuations for mortgages, private sales, legal matters, and more.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/services" className="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-md font-semibold transition duration-150 ease-in-out">
                 Our Services

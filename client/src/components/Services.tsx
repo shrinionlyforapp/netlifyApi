@@ -48,8 +48,8 @@ const Services: React.FC = () => {
       <Container>
         <div className="text-center mb-16">
           <span className="text-[#D97706] font-medium">Our Expertise</span>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#1F2937] mt-2 mb-4">Residential Appraisal Services</h2>
-          <p className="max-w-3xl mx-auto text-lg text-[#374151]">Expert residential property valuation services across the Greater Toronto Area</p>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#1F2937] mt-2 mb-4">Comprehensive Appraisal Services</h2>
+          <p className="max-w-3xl mx-auto text-lg text-[#374151]">Trusted residential property valuations for all your real estate needs</p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

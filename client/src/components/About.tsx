@@ -18,14 +18,14 @@ const About: React.FC = () => {
             <span className="text-[#D97706] font-medium">About Us</span>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#1F2937] mt-2 mb-6">About PNP Appraisal Inc.</h2>
             <p className="text-[#374151] mb-4">
-              PNP Appraisal Inc. is led by Prakashkumar Panchal, P.App., CRA, a qualified Canadian Residential Appraiser 
-              with over 8 years of experience in property valuation throughout the Greater Toronto Area, Durham region, 
-              York region, Toronto, and Scarborough.
+              PNP Appraisal Inc. is led by Prakashkumar Panchal, a designated Canadian Residential Appraiser (CRA) 
+              with the Appraisal Institute of Canada. With extensive experience in residential property valuation, 
+              we serve the Greater Toronto Area with professional and reliable appraisal services.
             </p>
             <p className="text-[#374151] mb-4">
-              As a certified appraiser with the Appraisal Institute of Canada, Prakash specializes in residential 
-              properties including single-family homes and multi-family properties up to 4 units (duplexes, triplexes, 
-              and fourplexes).
+              As a certified residential appraiser, we specialize in property valuations for mortgages, refinancing, 
+              private sales, estate planning, divorce settlements, and other legal matters. Our expertise covers 
+              single-family homes, condominiums, townhouses, and multi-family properties.
             </p>
             <p className="text-[#374151] mb-6">
               With a client base that includes major banks, private lenders, mortgage brokers, buyers, sellers, and lawyers, 
