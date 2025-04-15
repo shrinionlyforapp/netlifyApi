@@ -63,7 +63,7 @@ const Services: React.FC = () => {
               <div className="p-6">
                 <h3 className="font-heading text-xl font-semibold mb-3">{service.title}</h3>
                 <p className="text-[#374151] mb-4">{service.description}</p>
-                <Link href="/contact" className="text-primary hover:text-[#1e3a8a] font-medium flex items-center">
+                <Link href={`/services#${service.title.toLowerCase().replace(/\s+/g, '-')}`} className="text-primary hover:text-[#1e3a8a] font-medium flex items-center">
                   Learn More
                   <ArrowRight className="h-5 w-5 ml-1" />
                 </Link>
