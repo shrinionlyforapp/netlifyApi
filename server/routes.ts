@@ -17,9 +17,14 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const contactData = insertContactSchema.parse(req.body);
       const newInquiry = await storage.createContactInquiry(contactData);
       
-      // Email sending temporarily disabled until Gmail authentication is properly configured
-      console.log("Contact inquiry saved:", newInquiry);
-      console.log("Email notification would be sent to:", contactData.email);
+      // Try to send email notification
+      try {
+        await sendContactEmail(contactData);
+        console.log("Email sent successfully to info@pnpappraisal.com");
+      } catch (emailError) {
+        console.error("Email sending failed - Gmail authentication needed:", emailError.message);
+        console.log("Contact inquiry saved but email notification failed");
+      }
       
       return res.status(201).json({
         message: "Contact inquiry submitted successfully",
