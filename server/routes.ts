@@ -2,6 +2,7 @@ import type { Express, Request, Response } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactSchema } from "@shared/schema";
+import { sendContactEmail } from "./email";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // put application routes here
@@ -16,8 +17,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const contactData = insertContactSchema.parse(req.body);
       const newInquiry = await storage.createContactInquiry(contactData);
       
-      // Send email notification
-      await sendContactEmail(contactData);
+      // Email sending temporarily disabled until Gmail authentication is properly configured
+      console.log("Contact inquiry saved:", newInquiry);
+      console.log("Email notification would be sent to:", contactData.email);
       
       return res.status(201).json({
         message: "Contact inquiry submitted successfully",

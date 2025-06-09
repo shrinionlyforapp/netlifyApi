@@ -2,12 +2,13 @@
 import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
+  service: 'gmail',
   host: 'smtp.gmail.com',
-  port: 465,
-  secure: true, // Use SSL
+  port: 587,
+  secure: false,
   auth: {
-    user: process.env.EMAIL_USER, // Your Gmail address or Google Workspace email
-    pass: process.env.EMAIL_APP_PASSWORD, // App-specific password for Gmail
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_APP_PASSWORD,
   },
   tls: {
     rejectUnauthorized: false
