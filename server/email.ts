@@ -3,12 +3,15 @@ import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
-  port: 587,
-  secure: false,
+  port: 465,
+  secure: true, // Use SSL
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASSWORD,
+    user: process.env.EMAIL_USER, // Your Gmail address or Google Workspace email
+    pass: process.env.EMAIL_APP_PASSWORD, // App-specific password for Gmail
   },
+  tls: {
+    rejectUnauthorized: false
+  }
 });
 
 export const sendContactEmail = async (contactData: any) => {
