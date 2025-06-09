@@ -181,8 +181,6 @@ const ContactForm: React.FC = () => {
                         </FormControl>
                         <SelectContent>
                           <SelectItem value="residential">Residential</SelectItem>
-                          <SelectItem value="commercial">Commercial</SelectItem>
-                          <SelectItem value="industrial">Industrial</SelectItem>
                           <SelectItem value="land">Land</SelectItem>
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
@@ -249,7 +247,7 @@ const ContactForm: React.FC = () => {
                   </div>
                   <div className="ml-3">
                     <h4 className="text-lg font-medium text-[#1F2937]">Office Address</h4>
-                    <p className="text-[#374151]">123 Bay Street, Suite 400<br />Toronto, ON M5X 1E3</p>
+                    <p className="text-[#374151]">47 Curran Hall Cres<br />Scarborough, ON M1G 0A1</p>
                   </div>
                 </div>
                 
@@ -269,7 +267,7 @@ const ContactForm: React.FC = () => {
                   </div>
                   <div className="ml-3">
                     <h4 className="text-lg font-medium text-[#1F2937]">Email</h4>
-                    <p className="text-[#374151]">prakashpanchal@pnpappisers.com</p>
+                    <p className="text-[#374151]">info@pnpappraisal.com</p>
                   </div>
                 </div>
                 
