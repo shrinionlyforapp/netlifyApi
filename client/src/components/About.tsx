@@ -5,8 +5,8 @@ import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carouse
 
 const About: React.FC = () => {
   const stats = [
-    { value: '8+', label: 'Years Experience' },
-    { value: '1,000+', label: 'Properties Appraised' },
+    { value: '9+', label: 'Years Experience' },
+    { value: '2,500+', label: 'Properties Appraised' },
     { value: '98%', label: 'Client Satisfaction' },
     { value: '50+', label: 'Business Clients' }
   ];
@@ -64,9 +64,7 @@ const About: React.FC = () => {
                 className="w-full" 
                 opts={{ 
                   loop: true,
-                  dragFree: true,
-                  duration: 3000,
-                  delay: 5000
+                  dragFree: true
                 }}
               >
                 <CarouselContent>

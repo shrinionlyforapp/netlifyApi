@@ -17,11 +17,6 @@ const Services: React.FC = () => {
       description: "Comprehensive valuation services for single-family homes, condominiums, townhouses, and multi-family properties."
     },
     {
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-      title: "Commercial Appraisals",
-      description: "Expert valuation for office buildings, retail spaces, industrial properties, and special-purpose commercial properties."
-    },
-    {
       image: "https://images.unsplash.com/photo-1592595896616-c37162298647?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
       title: "Land Valuations",
       description: "Accurate appraisals for vacant land, development sites, and agricultural properties to support your investment decisions."

@@ -16,9 +16,14 @@ const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-gray-300 mb-6">
-              Professional property appraisal services in the Greater Toronto Area, 
-              providing accurate valuations for residential, commercial, and industrial properties.
+              Professional residential property appraisal services in the Greater Toronto Area, 
+              providing accurate valuations for homes, condominiums, and land.
             </p>
+            <div className="text-gray-300 mb-6">
+              <p className="mb-2"><strong>Office Address:</strong> 47 Curran Hall Cres, Scarborough ON M1G 0A1</p>
+              <p className="mb-2"><strong>Phone:</strong> <a href="tel:4168756515" className="hover:text-white transition-colors">416-875-6515</a></p>
+              <p><strong>Email:</strong> <a href="mailto:info@pnpappraisal.com" className="hover:text-white transition-colors">info@pnpappraisal.com</a></p>
+            </div>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors" aria-label="Facebook">
                 <Facebook className="h-6 w-6" />
@@ -48,7 +53,6 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-medium mb-4">Our Services</h3>
             <ul className="space-y-2">
               <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">Residential Appraisals</Link></li>
-              <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">Commercial Appraisals</Link></li>
               <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">Land Valuations</Link></li>
               <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">Legal & Litigation Support</Link></li>
               <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">Mortgage Financing</Link></li>

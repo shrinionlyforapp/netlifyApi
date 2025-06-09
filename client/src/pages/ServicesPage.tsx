@@ -41,8 +41,8 @@ const ServicesPage: React.FC = () => {
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-[#1F2937]">Our Appraisal Services</h1>
             <p className="text-lg text-[#374151]">
-              At Prakash Panchal Appraisals, we provide comprehensive property valuation services tailored to meet your specific needs.
-              Our expertise spans residential, commercial, and specialized property types.
+              At PNP Appraisal Inc., we provide comprehensive residential property valuation services tailored to meet your specific needs.
+              Our expertise spans residential properties and specialized valuation requirements.
             </p>
           </div>
         </Container>
@@ -62,15 +62,7 @@ const ServicesPage: React.FC = () => {
             </Link>
           </div>
 
-          <div id="commercial-appraisals" className="mb-16 scroll-mt-24">
-            <h2 className="text-3xl font-bold mb-4">Commercial Appraisals</h2>
-            <p className="text-gray-600 mb-4">
-              For commercial properties, we provide comprehensive valuation services including income analysis, market studies, and detailed property assessments.
-            </p>
-            <Link href="/contact" className="inline-flex items-center text-primary hover:text-[#1e3a8a] font-medium">
-              Request Commercial Appraisal <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </div>
+
 
           <div id="land-valuations" className="mb-16 scroll-mt-24">
             <h2 className="text-3xl font-bold mb-4">Land Valuations</h2>
