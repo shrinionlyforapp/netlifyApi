@@ -9,5 +9,7 @@
   status = 200
   
 [functions]
-  node_version = 18
   node_bundler = "esbuild"
+
+  [functions.node_version]
+    version = 18
