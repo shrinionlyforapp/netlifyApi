@@ -24,7 +24,7 @@ export const handler = async (event: any) => {
 
   const mailOptions = {
     from: `"PNP Appraisal Inc." <${process.env.EMAIL_USER}>`,
-    to: process.env.GMAIL_USER,
+    to: process.env.EMAIL_USER,
     replyTo: data.email,
     subject: `New Appraisal Request from ${data.firstName} ${data.lastName}`,
     text: `Message: ${data.message}`,
