@@ -57,7 +57,7 @@ const ContactForm: React.FC = () => {
   // Form submission
   const mutation = useMutation({
     mutationFn: (data: ContactFormValues) => {
-      return apiRequest('POST', '/api/contact', data);
+      return apiRequest('POST', '/.netlify/functions/contact', data);
     },
     onSuccess: () => {
       toast({

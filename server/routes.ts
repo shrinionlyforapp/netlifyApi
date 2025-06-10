@@ -12,7 +12,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // e.g. storage.insertUser(user) or storage.getUserByUsername(username)
 
   // Contact inquiry endpoint
-  app.post("/api/contact", async (req: Request, res: Response) => {
+  app.post("/.netlify/functions/contact", async (req: Request, res: Response) => {
     try {
       const contactData = insertContactSchema.parse(req.body);
       const newInquiry = await storage.createContactInquiry(contactData);
@@ -39,7 +39,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // Get all contact inquiries (admin-only in a real app)
-  app.get("/api/contact", async (_req: Request, res: Response) => {
+  app.get("/.netlify/functions/contact",async (_req: Request, res: Response) => {
     try {
       const inquiries = await storage.getAllContactInquiries();
       return res.status(200).json(inquiries);
