@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [build]
   functions = "netlify/functions"
 
@@ -6,12 +5,3 @@
   from = "/api/contact"
   to = "/.netlify/functions/contact"
   status = 200
-=======
-[build]
-  functions = "netlify/functions"
-
-[[redirects]]
-  from = "/api/contact"
-  to = "/.netlify/functions/contact"
-  status = 200
->>>>>>> 4f2f7a0 (added new changes)
