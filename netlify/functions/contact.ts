@@ -13,14 +13,17 @@ export const handler = async (event: any) => {
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
     auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS,
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_APP_PASSWORD,
     },
   });
 
   const mailOptions = {
-    from: `"PNP Appraisal Inc." <${process.env.GMAIL_USER}>`,
+    from: `"PNP Appraisal Inc." <${process.env.EMAIL_USER}>`,
     to: process.env.GMAIL_USER,
     replyTo: data.email,
     subject: `New Appraisal Request from ${data.firstName} ${data.lastName}`,
