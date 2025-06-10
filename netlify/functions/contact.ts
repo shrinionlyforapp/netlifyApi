@@ -1,7 +1,15 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
-exports.handler = async (event) => {
-  const data = JSON.parse(event.body);
+export const handler = async (event: any) => {
+  let data;
+  try {
+    data = JSON.parse(event.body);
+  } catch (err) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ error: 'Invalid JSON in request body.' }),
+    };
+  }
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -19,8 +27,8 @@ exports.handler = async (event) => {
     text: `Message: ${data.message}`,
     html: `<p><strong>Name:</strong> ${data.firstName} ${data.lastName}</p>
            <p><strong>Email:</strong> ${data.email}</p>
-           <p><strong>Phone:</strong> ${data.phone}</p>
-           <p><strong>Property Type:</strong> ${data.propertyType}</p>
+           <p><strong>Phone:</strong> ${data.phone || 'N/A'}</p>
+           <p><strong>Property Type:</strong> ${data.propertyType || 'N/A'}</p>
            <p><strong>Message:</strong> ${data.message}</p>`,
   };
 
@@ -30,7 +38,7 @@ exports.handler = async (event) => {
       statusCode: 200,
       body: JSON.stringify({ success: true, messageId: info.messageId }),
     };
-  } catch (error) {
+  } catch (error: any) {
     return {
       statusCode: 500,
       body: JSON.stringify({ error: error.message }),
