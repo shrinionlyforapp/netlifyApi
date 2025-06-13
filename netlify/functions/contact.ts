@@ -18,7 +18,7 @@ export const handler = async (event: any) => {
     secure: false,
     auth: {
       user: 'noreply@pnpappraisal.com',
-      pass: 'rxfg wfoe kjra lfvd',
+      pass: 'eucx nbsa aldj qqyy',
     },
   });
 
