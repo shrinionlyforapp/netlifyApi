@@ -7,8 +7,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false,
   auth: {
-    user: 'info@pnpappraisal.com',
-    pass: 'sfjg tyjq nkcx kqhv',
+    user: 'noreply@pnpappraisal.com',
+    pass: 'rxfg wfoe kjra lfvd',
   },
   tls: {
     rejectUnauthorized: false
@@ -18,7 +18,7 @@ const transporter = nodemailer.createTransport({
 export const sendContactEmail = async (contactData: any) => {
   try {
     const mailOptions = {
-      from: `"PNP Appraisal Inc." <info@pnpappraisal.com>`,
+      from: `"PNP Appraisal Inc." <noreply@pnpappraisal.com>`,
       to: 'info@pnpappraisal.com',
       replyTo: contactData.email,
       subject: `New Appraisal Request from ${contactData.firstName} ${contactData.lastName}`,
