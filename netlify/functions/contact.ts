@@ -17,14 +17,14 @@ export const handler = async (event: any) => {
     port: 587,
     secure: false,
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_APP_PASSWORD,
+      user: 'noreply@pnpappraisal.com',
+      pass: 'rxfg wfoe kjra lfvd',
     },
   });
 
   const mailOptions = {
-    from: `"PNP Appraisal Inc." <${process.env.EMAIL_USER}>`,
-    to: process.env.EMAIL_USER,
+    from: `"PNP Appraisal Inc." <noreply@pnpappraisal.com>`,
+    to: 'info@pnpappraisal.com',
     replyTo: data.email,
     subject: `New Appraisal Request from ${data.firstName} ${data.lastName}`,
     text: `Message: ${data.message}`,
